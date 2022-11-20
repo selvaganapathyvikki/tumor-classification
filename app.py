@@ -23,7 +23,9 @@ loaded_model_classification = keras.models.load_model("final_model_1")
 loaded_model_valid_checker = keras.models.load_model("final_model_valid_mri_1")
 loaded_model_classification.summary()
 
-
+@app.route('/')
+def home() :
+    return "welcome to tumor-classification-app"
 @app.route('/predict', methods=["POST"])
 def index():
     # print("hii")
