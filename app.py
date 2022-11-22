@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 # import requests
 import werkzeug
 import keras
-# from keras.models import Sequential
+from keras.models import Sequential
 # from keras.layers import Dense, Conv2D , MaxPool2D , Flatten , Dropout 
 # from keras.preprocessing.image import ImageDataGenerator
 
