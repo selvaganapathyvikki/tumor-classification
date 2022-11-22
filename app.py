@@ -23,10 +23,10 @@ loaded_model_valid_checker = keras.models.load_model("final_model_valid_mri_1")
 loaded_model_classification.summary()
 
 @app.route('/')
-def home() :
+def index() :
     return "welcome to tumor-classification-app"
 @app.route('/predict', methods=["POST"])
-def index():
+def home():
     # print("hii")
     image = request.files['image']
     filename = werkzeug.utils.secure_filename(image.filename)
@@ -84,4 +84,4 @@ def new():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(3000, debug=True)
