@@ -1,15 +1,14 @@
 
 from flask import Flask, render_template, request
-import requests
+# import requests
 import werkzeug
 import keras
-from keras.models import Sequential
-from keras.layers import Dense, Conv2D , MaxPool2D , Flatten , Dropout 
-from keras.preprocessing.image import ImageDataGenerator
+# from keras.models import Sequential
+# from keras.layers import Dense, Conv2D , MaxPool2D , Flatten , Dropout 
+# from keras.preprocessing.image import ImageDataGenerator
 
-from tensorflow.keras.optimizers import Adam # - Works
-from tensorflow.keras.optimizers import Adam # - Works
-import tensorflow as tf
+# from tensorflow.keras.optimizers import Adam # - Works
+# import tensorflow as tf
 import cv2
 import os
 import numpy as np
